@@ -10,6 +10,10 @@ body {
   }
 
   section.section1 {
+    background-image: url(../assets/367419531_250538761150591_4721836890151511756_n.png);
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
     .navbar {
       nav {
         height: 4rem;
@@ -27,19 +31,21 @@ body {
           color: black;
 
           li {
+            color: white;
             margin-left: 30px;
           }
 
           img {
             width: 10rem;
-            background-color: rgba(248, 150, 35, 1);
           }
 
           button {
-            border: none;
+            border: solid 1px white;
             border-radius: 3rem;
             padding: 8px;
             width: 8rem;
+            color: white;
+            background-color: transparent;
           }
         }
 
@@ -64,6 +70,7 @@ body {
         }
 
         h1 {
+          color: white;
           margin-left: 1rem;
           font-size: xxx-large;
           font-weight: bolder;
@@ -75,11 +82,12 @@ body {
           display: flex;
 
           button {
-            border: none;
+            border: solid 1px white;
             border-radius: 1rem;
             padding: 8px;
             width: 6rem;
-
+            color: white;
+            background-color: transparent;
           }
         }
       }
@@ -95,7 +103,7 @@ body {
     width: 65%;
     height: 8rem;
     margin: auto;
-    margin-top: 6rem;
+    margin-top: -4rem;
     border-radius: 5px;
 
     img {
@@ -625,6 +633,11 @@ body {
 
   @media (max-width:1024px) {
     section.section1 {
+      background-size: cover;
+      background-position: center;
+      height: 30rem;
+      width: 100%;
+      padding: 1.2rem;
       .navbar {
         nav {
           height: 4rem;
@@ -784,6 +797,11 @@ body {
 
   @media (max-width:768px) {
     section.section1 {
+      background-size: cover;
+      background-position: center;
+      height: 30rem;
+      width: 100%;
+      padding-right: 15rem;
       .navbar {
         nav {
           margin-left: 1rem;
@@ -1062,6 +1080,7 @@ body {
 
 
   }
+
 
 
 }
