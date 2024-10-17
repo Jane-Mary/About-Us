@@ -1,6 +1,8 @@
 body {
   background-color: whitesmoke;
   font-family: "Balsamiq Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 
   button {
     cursor: pointer;
@@ -14,12 +16,13 @@ body {
     background-size: cover;
     background-position: center;
     height: 35rem;
+
     .navbar {
       nav {
         height: 4rem;
         background-color: transparent;
         align-items: center;
-        margin-left: 7rem;
+        margin-left: 9rem;
 
         ul {
           display: flex;
@@ -114,7 +117,7 @@ body {
   section.section2 {
 
     background-color: white;
-    height: 30rem;
+    height: 45rem;
     margin: auto;
 
     .two {
@@ -162,6 +165,28 @@ body {
     }
   }
 
+  .small {
+    font-size: medium;
+    position: relative;
+    background: white;
+    width: 15rem;
+    margin-left: 28rem;
+    margin-top: -17rem;
+    padding: .5rem;
+    border-radius: 3px;
+    box-shadow: 2px 1px;
+
+    p {
+      color: black;
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+
   section.section3 {
     .three {
       margin-top: 5rem;
@@ -193,7 +218,7 @@ body {
         position: relative;
         /* Position context for absolute points */
         width: 2px;
-        height: 42rem;
+        height: 44rem;
         background-color: grey;
         margin-right: 4rem;
 
@@ -218,12 +243,12 @@ body {
       }
 
       .point:nth-child(3) {
-        top: 52%;
+        top: 51%;
         left: -9px;
       }
 
       .point:nth-child(4) {
-        top: 78%;
+        top: 77%;
         left: -9px;
       }
 
@@ -340,25 +365,60 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10rem;
 
     .six {
-      button {
-        margin-left: 5rem;
-        border: none;
-        border-radius: 1rem;
-        padding: 8px;
-        width: 7rem;
-        font-weight: bold;
-        color: rgba(248, 150, 35, 1);
-        background: rgba(254, 245, 233, 1)
+      .info {
+        margin-bottom: 5rem;
+        margin-left: 30rem;
+
+        button {
+          margin-left: 5rem;
+          border: none;
+          border-radius: 1rem;
+          padding: 8px;
+          width: 7rem;
+          font-weight: bold;
+          color: rgba(248, 150, 35, 1);
+          background: rgba(254, 245, 233, 1)
+        }
+
+        h1 {
+          font-weight: lighter;
+          font-size: xx-large;
+          font-family: "Balsamiq Sans", sans-serif;
+          font-style: normal;
+          color: rgba(94, 61, 152, 1);
+        }
       }
 
-      h1 {
-        font-weight: lighter;
-        font-size: xx-large;
-        font-family: "Balsamiq Sans", sans-serif;
-        font-style: normal;
-        color: rgba(94, 61, 152, 1);
+      .instructors {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .instructor {
+          width: 15rem;
+          background-color: rgba(94, 61, 152, 0.85);
+          color: white;
+          margin-right: 3rem;
+          border-radius: 4px;
+          padding: 1rem;
+
+          .image {
+            margin-left: 2.5rem;
+            margin-top: -4rem;
+
+            img {
+              background-color: white;
+              border: solid 4px rgba(94, 61, 152, 1);
+              border-radius: 9rem;
+              width: 6rem;
+              margin-left: 2rem;
+            }
+          }
+        }
       }
     }
   }
@@ -491,18 +551,20 @@ body {
     justify-content: center;
 
     .eight {
-      width: 40rem;
-      height: 20rem;
+      width: 50rem;
+      height: 25rem;
       background: rgba(94, 61, 152, 0.85);
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
       border-radius: 3px;
+      padding-right: 7rem;
+      padding-bottom: 5rem;
 
       .contents {
+        margin-top: 3rem;
+        margin-left: 6rem;
+        margin-bottom: 2rem;
+
         button {
-          margin-left: 8.5rem;
+          margin-left: 20rem;
           border: none;
           border-radius: 1rem;
           padding: 8px;
@@ -531,11 +593,40 @@ body {
           font-size: small;
         }
       }
+
+      .comments {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 6px;
+        width: 35rem;
+        margin-left: 10rem;
+        padding: 1rem;
+
+        .image {
+          margin-right: 2rem;
+
+          img {
+            background-color: white;
+            border: solid 4px rgba(94, 61, 152, 1);
+            border-radius: 9rem;
+            width: 6rem;
+            margin-left: 2rem;
+          }
+        }
+        .info{
+          p{
+            text-align: left;
+          }
+        }
+      }
     }
   }
 
   section.section9 {
-    margin-top: 3rem;
+    margin-top: 5rem;
     height: 35rem;
     background-color: black;
     color: white;
@@ -631,19 +722,26 @@ body {
     text-align: center;
   }
 
+  @media (max-width:1440px) {
+    .small {
+      right: 10rem;
+      width: 15rem;
+    }
+  }
+
   @media (max-width:1024px) {
     section.section1 {
       background-size: cover;
       background-position: center;
       height: 30rem;
-      width: 100%;
+      width: 90rem;
       padding: 1.2rem;
       .navbar {
         nav {
           height: 4rem;
           background-color: transparent;
           align-items: center;
-          margin-left: 4rem;
+          margin-left: 10rem;
 
           ul {
             display: flex;
@@ -686,7 +784,7 @@ body {
 
     .container {
       width: 75%;
-      margin-left: 12rem;
+      margin-left: 24rem;
       height: 8rem;
 
       img {
@@ -696,11 +794,17 @@ body {
 
     section.section2 {
       margin-left: 3rem;
-      width: 100%;
+      width: 88rem;
     }
 
+    .small {
+      right: 7rem;
+      width: 15rem;
+    }
 
     section.section3 {
+      margin-left: 2rem;
+      width: 90rem;
       .three {
         .vl {
           position: relative;
@@ -723,33 +827,52 @@ body {
     }
 
     section.section4 {
-      margin-left: 3rem;
-      width: 100%;
+      margin-left: 2rem;
+      width: 90rem;
     }
 
     section.section5 {
-      margin-left: 3rem;
-      width: 100%;
-
+      margin-left: 2rem;
+      width: 90rem;
       .logos {
-        margin-left: 3rem;
+        margin-left: 2rem;
 
         img {
-          width: 6rem;
+          width: 8rem;
+        }
+      }
+    }
+
+    section.section6{
+      margin-left: 3rem;
+      width: 90rem;
+      margin-bottom: 1rem;
+      .six{
+        .info{
+        margin-left: 40rem;
+        }
+        .instructors{
+          margin: 10rem;
+          .instructor{
+            .image{
+              margin-right: 3rem;
+            }
+          }
+
         }
       }
     }
 
     section.section7 {
       height: 55rem;
-      margin-left: 3rem;
-      width: 100%;
+      margin-left: 2rem;
+      width: 90rem;
 
       .seven {
         margin-left: 1rem;
 
         .events {
-          margin-top: 3rem;
+          margin-top: 6rem;
           margin-left: 5.7rem;
           margin-right: 5rem;
         }
@@ -757,18 +880,19 @@ body {
 
     }
 
-    section.section8{
-      width: 100%;
-      margin-left: 3rem;
-     .eight{
-       width: 50rem;
-       height: 30rem;
-     }
-   }
+    section.section8 {
+      margin-left: 2rem;
+      width: 90rem;
+
+      .eight {
+        width: 50rem;
+        height: 30rem;
+      }
+    }
 
     section.section9 {
-      margin-left: 3rem;
-      width: 100%;
+      margin-left: 2rem;
+      width: 90rem;
 
       .image {
         hr {
@@ -796,19 +920,26 @@ body {
   }
 
   @media (max-width:768px) {
+    font-size: x-large;
     section.section1 {
       background-size: cover;
       background-position: center;
       height: 30rem;
-      width: 100%;
+      width: 90rem;
       padding-right: 15rem;
+
       .navbar {
         nav {
-          margin-left: 1rem;
+          margin-left: 8rem;
+          ul{
+            li{
+              margin-right: 6rem;
+            }
+          }
         }
 
         hr {
-          width: 60rem;
+          width: 100rem;
         }
       }
 
@@ -820,18 +951,18 @@ body {
     }
 
     .container {
-      width: 85%;
-      margin-left: 10rem;
-      height: 8rem;
+      width: 50rem;
+      margin-left: 30rem;
+      height: 10rem;
 
       img {
-        width: 12rem;
+        width: 15rem;
       }
     }
 
     section.section2 {
       margin-left: 6rem;
-      width: 100%;
+      width: 100rem;
 
       .two {
         .image {
@@ -842,9 +973,14 @@ body {
       }
     }
 
+    .small {
+      right: 8rem;
+      width: 15rem;
+    }
+
     section.section3 {
       margin-left: 6rem;
-      width: 100%;
+      width: 100rem;
 
       .three {
         p {
@@ -884,7 +1020,7 @@ body {
     section.section4 {
       margin-left: 4rem;
       height: 30rem;
-      width: 100%;
+      width: 100rem;
       padding-right: 4rem;
 
       .four {
@@ -896,7 +1032,7 @@ body {
           margin-left: 3rem;
 
           img {
-            width: 8rem;
+            width: 14rem;
           }
         }
 
@@ -904,7 +1040,7 @@ body {
           margin-top: 3rem;
 
           img {
-            width: 8rem;
+            width: 14rem;
           }
         }
 
@@ -947,40 +1083,40 @@ body {
 
     section.section5 {
       margin-left: 4rem;
-      width: 100%;
+      width: 100rem;
       padding-right: 4rem;
 
       .logos {
         margin-left: 4rem;
 
         img {
-          width: 5rem;
+          width: 10rem;
           margin-right: 3.5rem;
         }
       }
     }
 
-    section.section6{
+    section.section6 {
       margin-left: 15rem;
     }
 
-    section.section7{
-      height: 50rem;
-      margin-left: 4rem;
-      width: 100%;
+    section.section7 {
+      height: 80rem;
+      margin-left: 2rem;
+      width: 100rem;
       padding-right: 5rem;
 
       .seven {
 
-        margin-left: 5rem;
+        margin-left: 10rem;
 
         .events {
-          margin-top: 5rem;
-      
-          .event-info{
-            width: 25rem;
-            .image{
-              img{
+          .event-info {
+            width: 40rem;
+
+            .image {
+              img {
+                width: 9rem;
                 border-radius: 8px;
                 margin-right: 1rem;
               }
@@ -988,18 +1124,18 @@ body {
 
             .contents {
               h3 {
-                font-weight:lighter;
+                font-weight: lighter;
                 font-family: "Balsamiq Sans", sans-serif;
                 font-style: normal;
                 color: rgba(94, 61, 152, 1);
               }
-  
+
               .icons {
                 width: 10rem;
-  
+
                 span {
-                  font-size: smaller;
-                  margin-right: 2px;
+                  font-size: small;
+                  margin-right: 3px;
                 }
               }
             }
@@ -1008,16 +1144,19 @@ body {
         }
 
         .news {
-          margin-top: 5rem;
+          margin-top: 3rem;
+
           .event-info {
-            width: 22rem;
+            width: 40rem;
+
             .image {
               img {
+                width: 9rem;
                 border-radius: 8px;
                 margin-right: 1rem;
               }
             }
-  
+
             .contents {
               h3 {
                 font-weight: lighter;
@@ -1025,10 +1164,10 @@ body {
                 font-style: normal;
                 color: rgba(94, 61, 152, 1);
               }
-  
+
               .icons {
                 width: 10rem;
-  
+
                 span {
                   font-size: small;
                   margin-right: 3px;
@@ -1041,17 +1180,27 @@ body {
 
     }
 
-    section.section8{
-       width: 100%;
-       margin-left: 6rem;
-      .eight{
+    section.section8 {
+      width: 100rem;
+      margin-left: 6rem;
+
+      .eight {
+        .contents{
+          button{
+            margin-left: 35rem;
+          }
+        }
         width: 80rem;
+        .comments{
+          width: 50rem;
+          margin-left: 20rem;
+        }
       }
     }
 
     section.section9 {
       margin-left: 1rem;
-      width: 58rem;
+      width: 100rem;
       height: 38rem;
 
       .image {
@@ -1062,6 +1211,7 @@ body {
 
       .footer {
         padding: 1rem;
+
         .footer-content {
           .parts {
             margin-right: 5rem;
@@ -1069,8 +1219,12 @@ body {
 
           .email {
             .button {
+              width: 25rem;
               p {
                 text-align: left;
+              }
+              button{
+                width: 9rem;
               }
             }
           }
